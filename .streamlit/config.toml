@@ -1,0 +1,15 @@
+[runner]
+fastReruns = true
+
+[theme]
+primaryColor="#2563EB"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F1F5F9"
+textColor="#0F172A"
+font= "serif"
+
+[client]
+showSidebarNavigation = false
+
+[server]
+port = 9999
