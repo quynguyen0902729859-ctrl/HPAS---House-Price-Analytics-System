@@ -383,7 +383,7 @@ if __name__ == "__main__":
     if "model" not in st.session_state: st.session_state.model = None
     if "y_test" not in st.session_state: st.session_state.y_test = None
     if "X_test" not in st.session_state: st.session_state.X_test = None
-    if "    " not in st.session_state: st.session_state.X_column_blueprint = None
+    if "X_column_blueprint" not in st.session_state: st.session_state.X_column_blueprint = None
     if "status" not in st.session_state: st.session_state.status = "error"
 
     def change_state():
