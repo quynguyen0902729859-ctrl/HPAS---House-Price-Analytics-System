@@ -59,19 +59,19 @@ if __name__ == "__main__":
         <h1 style = "margin-top: 75px; margin-bottom:-5px; font-size: 60px">
             Chức năng
         </h1>
-        <a href="http://localhost:9999/Market_Analysis" target="_self" style="text-decoration:none;">
+        <a href="/Market_Analysis" target="_self" style="text-decoration:none;">
             <div class = "use">
                 <h2 style="font-weight: bolder;">📊 Phân tích thị trường</h2>
                 <p class="describe">Khám phá mối quan hệ giữa giá nhà và các yếu tố ảnh hưởng, cũng như những xu hướng tăng giảm của giá nhà thông qua những biểu đồ trực quan.</p>
             </div>
         </a>
-        <a href="http://localhost:9999/Input_Record" target="_self" style="text-decoration:none;">
+        <a href="/Input_Record" target="_self" style="text-decoration:none;">
             <div class = "use">
                 <h2 style="font-weight: bolder;">📈 Thêm dữ liệu dự đoán</h2>
                 <p class="describe">Phân tích sự thay đổi của giá nhà theo thời gian để nhận diện xu hướng tăng giảm của thị trường. Giúp đánh giá tốc độ biến động giá và những giai đoạn có sự thay đổi đáng chú ý.</p>
             </div>
         </a>
-        <a href="http://localhost:9999/Price_Prediction" target="_self" style="text-decoration:none;">
+        <a href="/Price_Prediction" target="_self" style="text-decoration:none;">
             <div class = "use">
                 <h2 style="font-weight: bolder;">🔮 Phân tích dự đoán</h2>
                 <p class="describe">Nhập dữ liệu của một căn nhà để dự đoán giá nhà bằng mô hình Machine Learning. Kết quả dự đoán được xây dựng dựa trên các mẫu dữ liệu đã được nhập trước đó.</p>
@@ -108,22 +108,22 @@ if __name__ == "__main__":
                 margin-top: 0px;
                 margin-bottom: -115px;   
             }
+            button[kind="secondary"] {
+                background-color: #2E363A !important;
+                color: white !important;
+                border-radius: 8px !important;
+                margin-bottom: 6px;
+                text-align: left;
+            }
+            button[kind="secondary"]:hover {
+                background-color: #3A4349 !important;
+            }
         </style>
-        <div style="margin-top: -25px; margin-bottom: calc(100vh - 455px);">
-            <a href="http://localhost:9999" target="_self" class = "esu" style="text-decoration:none; color: white; font-weight: bold; background-color: #2E363A">
-                Trang Chủ
-            </a>
-            <a href="http://localhost:9999/Market_Analysis" target="_self" class = "esu" style="text-decoration:none; color: white">
-                    Phân Tích Thị Trường
-            </a>
-            <a href="http://localhost:9999/Input_Record" target="_self" class = "esu" style="text-decoration:none; color: white">
-                    Thêm Dữ Liệu Dự Đoán
-            </a>
-            <a href="http://localhost:9999/Price_Prediction" target="_self" class = "esu" style="text-decoration:none; color: white">
-                    Phân Tích Dự Đoán
-            </a>
-        </div>
         """,
         unsafe_allow_html=True
     )
+    st.sidebar.page_link("app.py", label="🏠 Trang Chủ")
+    st.sidebar.page_link("pages/1_Market_Analysis.py", label="📊 Phân Tích Thị Trường")
+    st.sidebar.page_link("pages/2_Input_Record.py", label="📈 Thêm Dữ Liệu Dự Đoán")
+    st.sidebar.page_link("pages/3_Price_Prediction.py", label="🔮 Phân Tích Dự Đoán")
     st.sidebar.image("images/HPAS-7.PNG")
