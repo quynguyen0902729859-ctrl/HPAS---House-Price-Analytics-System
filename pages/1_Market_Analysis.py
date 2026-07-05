@@ -50,16 +50,16 @@ if __name__ == "__main__":
             }
         </style>
         <div style="margin-top: -25px; margin-bottom: calc(100vh - 470px);">
-            <a href="http://localhost:9999" target="_self" class = "esu" style="text-decoration:none; color: white">
+            <a href="/" target="_self" class = "esu" style="text-decoration:none; color: white">
                 Trang Chủ
             </a>
-            <a href="http://localhost:9999/Market_Analysis" target="_self" class = "esu" style="text-decoration:none; color: white; font-weight: bold; background-color: #2E363A">
+            <a href="/Market_Analysis" target="_self" class = "esu" style="text-decoration:none; color: white; font-weight: bold; background-color: #2E363A">
                 Phân Tích Thị Trường
             </a>
-            <a href="http://localhost:9999/Input_Record" target="_self" class = "esu" style="text-decoration:none; color: white">
+            <a href="/Input_Record" target="_self" class = "esu" style="text-decoration:none; color: white">
                 Thêm Dữ Liệu Dự Đoán
             </a>
-            <a href="http://localhost:9999/Price_Prediction" target="_self" class = "esu" style="text-decoration:none; color: white">
+            <a href="/Price_Prediction" target="_self" class = "esu" style="text-decoration:none; color: white">
                 Phân Tích Dự Đoán
             </a>
         </div>
